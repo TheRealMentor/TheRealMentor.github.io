@@ -45,7 +45,7 @@
             <div class="container">
                 <h1 class="main-heading">Hey there! I'm <span class="name">Sharad Roy</span></h1>
                 <br/>
-                <p class="description">Let me introduce myself. I'm an undergrad student studying <strong>Electrical Engineering</strong> at <strong>Indian Institute of Technology (IIT) Bhilai.</strong> I'm a Front-End Developer and still learning web development. And <strong>love</strong> what I do. Also, I like robotics and artificial intelligence.</p>
+                <p class="description">Let me introduce myself. I'm an undergrad student studying <strong>Electrical Engineering</strong> at <strong>Indian Institute of Technology (IIT) Bhilai.</strong> I'm a Front-End Developer and still learning web development. Machine Learning and Artificial Intelligence are my fields of interest.</p> 
             </div>        
         </section>
 
@@ -63,7 +63,9 @@
                         preloader.addClass('animated zoomOut');
                     }, 1200);
 
-                    
+                    setTimeout(function(){
+                        preloader.css('display', 'none'); 
+                    }, 1500);                   
 
                     setTimeout(function(){
                         navbar.addClass('animated fadeInDown');
