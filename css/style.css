@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* -------------------- */
+/* ---- PRE-LOADER ---- */
+/* -------------------- */
+
+.preloader-container {
+    display: table;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #17c0eb;
+    z-index: 999999;
+}
+
+.preloader {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.preloader p {
+    background-color: #40d2f7;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    font-size: 15rem;
+    text-transform: uppercase;
+    text-shadow: 5px 5px #333;  
+}
+
+/* -------------------- */
+/* ------ NAVBAR ------ */
+/* -------------------- */
+
+.navbar {
+    width: 100%;
+    padding: 3rem 0;
+    display: none;
+}
+
+.navbar .container {
+    position: relative;
+}
+
+.navbar__logo {
+    display: inline-block;
+}
+
+.navbar__logo p {
+    font-size: 3rem;
+}
+
+.navbar__list {
+    float: right;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.navbar__list-item {
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+.navbar__list-item:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.social-link:link,
+.social-link:visited {
+    text-decoration: none;
+    color: #ddd;
+    transition: all 0.5s;
+}
+
+.social-link--facebook:hover,
+.social-link--facebook:active {
+    color: #3b5999;
+}
+
+.social-link--linkedin:hover,
+.social-link--linkedin:active {
+    color: #0077B5;
+}
+
+.social-link--instagram:hover,
+.social-link--instagram:active {
+    color: #e4405f;
+}
+
+.social-link--twitter:hover,
+.social-link--twitter:active {
+    color: #55acee;
+}
+
+/* -------------------- */
+/* ------ HEADER ------ */
+/* -------------------- */
+
+.header {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.main-heading {
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    background-color: #2ecc71;
+    display: none;
+    padding: 0 2rem;
+    margin-bottom: 6rem;
+    color: #fff;
+}
+
+.main-heading .name {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    display: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 0;
+
+    /* Used for line break and background coloring just around text. */
+    
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    
+    box-shadow: 0.5rem 0 0 #3498db, -0.5rem 0 0 #3498db; 
+}
