@@ -36,12 +36,14 @@
                     <li class="navbar__list-item"><a href="#" class="social-link social-link--instagram"><i class="fab fa-instagram"></i></a></li>
 
                     <li class="navbar__list-item"><a href="#" class="social-link social-link--twitter"><i class="fab fa-twitter"></i></a></li>
+
+                    <li class="navbar__list-item"><a href="#" class="social-link social-link--github"><i class="fab fa-github"></i></a></li>
                         
                 </ul>
             </div>
         </nav>
 
-        <section class="header">
+        <section class="section header">
             <div class="container">
                 <h1 class="main-heading">Hey there! I'm <span class="name">Sharad Roy</span></h1>
                 <br/>
@@ -49,43 +51,49 @@
             </div>        
         </section>
 
+        <section class="section section-boxes">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card card--1">
+                            <div class="card__overlay overlay--1">
+                                <div class="card__title">
+                                    <p>About</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3">
+                        <div class="card card--2">
+                            <div class="card__overlay overlay--2">
+                                <div class="card__title">
+                                    <p>Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3">
+                        <div class="card card--3">
+                            <div class="card__overlay overlay--3">
+                                <div class="card__title">
+                                    <p>Gallery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
         
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script>
-            $(window).on('load', function(){
-                    var title = $('.main-heading');
-                    var description = $('.description');
-                    var navbar = $('.navbar');
-                    var preloader = $('.preloader-container');
-
-                    setTimeout(function(){
-                        preloader.addClass('animated zoomOut');
-                    }, 1200);
-
-                    setTimeout(function(){
-                        preloader.css('display', 'none'); 
-                    }, 1500);                   
-
-                    setTimeout(function(){
-                        navbar.addClass('animated fadeInDown');
-                        navbar.css('display', 'block');
-                    }, 1500);                    
-
-
-                    setTimeout(function(){
-                        title.addClass('animated pulse');
-                        title.css('display', 'inline-block');
-                    }, 2500); 
-
-                    setTimeout(function(){
-                        description.addClass('animated zoomIn');
-                        description.css('display', 'inline');
-                    }, 3500);
-
-            });
-        </script>
-        
+        <script src="js/script.js"></script>
 
     </body>
 </html>
