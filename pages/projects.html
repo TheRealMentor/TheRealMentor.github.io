@@ -7,12 +7,12 @@
         
         <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700|Anton" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/style__gallery.css">
+        <link rel="stylesheet" href="../css/style__projects.css">
         <link rel="stylesheet" href="../css/animate.css">
         <link rel="stylesheet" href="../css/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
         <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
         
-        <title>Sharad Roy &#x25b9; Gallery</title>
+        <title>Sharad Roy &#x25b9; Projects</title>
     </head>
     <body>
         
@@ -35,18 +35,60 @@
             </div>
         </nav>
 
-        <section class="gallery">
+        <section class="projects">
             <div class="container">
-                <h1 class="main-heading">Gallery</h1>
+                <h1 class="main-heading">Projects</h1>
+                <br/>
+                <p class="description">All of my projects, major and minor, so far.</p> 
             </div>
         </section>
         
 
         <div class="section main-body"> 
 
-            <div class="container">
-                <iframe src="https://snapwidget.com/embed/546628" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-            </div>
+            <section class="section section__projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1-of-2">
+                            <h3 class="project__title">Reconnaissance Bot</h3>
+                            <p class="project__duration">Mar 2018 &dash; Apr 2018</p>
+                        </div>
+                        <div class="col-1-of-2">
+                            <p class="project__description">This bot is made for recon. It uses a camera, attached in front, for object identification and tracking. It can run on difficult terrains where normal bots can't reach. It is remotely controlled through RF module, so no worries about the range of the BOT. It uses sensors to detect any moving object nearby and move the camera towards the moving object.</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="line-break"></div>
+                
+                <div class="container">    
+                    <div class="row">
+                        <div class="col-1-of-2">
+                            <h3 class="project__title">Billing Software</h3>
+                            <p class="project__duration">Sep 2017 &dash; Nov 2017</p>
+                        </div>
+                        <div class="col-1-of-2">
+                            <p class="project__description">The objective of this project was to interface with the printer using a PHP script and design a suitable UI/UX for the user to interact.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line-break"></div>
+                
+                <div class="container">    
+                    <div class="row">
+                        <div class="col-1-of-2">
+                            <h3 class="project__title">Polaris 2017 - 18</h3>
+                            <p class="project__duration">May 2017 &dash; Jun 2017</p>
+                        </div>
+                        <div class="col-1-of-2">
+                            <p class="project__description">My first web developing project ever. Motive of the project was to provide 1st year students with the proper information before they enter the institute.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
             <footer>
                 <div class="line-break"></div>
                 <div class="container footer">
@@ -74,14 +116,13 @@
 
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <!-- SnapWidget -->
-        <script src="https://snapwidget.com/js/snapwidget.js"></script>
         
         <script>
             $(window).on('load', function(){
                 var navbar = $('.navbar');
                 var mainBody = $('.main-body');
                 var title = $('.main-heading');
+                var description = $('.description');
 
                 setTimeout(function(){
                     navbar.addClass('animated fadeInDown');
@@ -94,9 +135,14 @@
                 }, 1800); 
 
                 setTimeout(function(){
+                    description.addClass('animated zoomIn');
+                    description.css('display', 'inline');
+                }, 2800);
+
+                setTimeout(function(){
                     mainBody.addClass('animated fadeIn');
                     mainBody.css('display', 'block');
-                }, 2300);
+                }, 3300);
 
             });
         </script>

@@ -1,0 +1,33 @@
+.projects {
+    padding-top: 6rem;
+    position: relative;
+}
+
+.projects .main-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.project__title {
+    font-size: 3rem;
+}
+
+.project__duration {
+    font-size: 2rem;
+    color: #aaa;
+}
+
+.project__description {
+    font-size: 2rem;
+    padding: 1rem 0;
+    word-spacing: 1px;
+    text-align: justify;
+}
+
+.section__projects > .container:not(:first-child) {
+    margin-top: 5rem;
+}
+
+.section__projects > .container:not(:last-child) {
+    margin-bottom: 5rem;
+}
