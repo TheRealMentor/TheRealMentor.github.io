@@ -1,0 +1,9 @@
+.gallery {
+    padding-top: 6rem;
+    position: relative;
+}
+
+.gallery .main-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+}

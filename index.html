@@ -29,27 +29,27 @@
                 </div>
                     
                 <ul class="navbar__list">
-                    <li class="navbar__list-item"><a href="about/index.html">About Me</a></li>
+                    <li class="navbar__list-item"><a href="pages/about.html">About Me</a></li>
 
                     <li class="navbar__list-item"><a href="#">Projects</a></li>
                 
                     <li class="navbar__list-item"><a href="#">Resume</a></li>
 
-                    <li class="navbar__list-item"><a href="#">Gallery</a></li>
+                    <li class="navbar__list-item"><a href="pages/gallery.html">Gallery</a></li>
                         
                 </ul>
             </div>
         </nav>
 
-        <section class="section header">
+        <section class="header">
             <div class="container">
                 <h1 class="main-heading">Hey there! I'm <span class="name">Sharad Roy</span></h1>
                 <br/>
-                <p class="description">Let me introduce myself. I'm an undergrad student studying <span>Electrical Engineering</span> at <span>Indian Institute of Technology (IIT) Bhilai.</span> I'm a Front-End Developer and still learning web development. Machine Learning and Artificial Intelligence are my fields of interest.</p> 
+                <p class="description">Let me introduce myself. I'm an undergrad student studying <span>Electrical Engineering</span> at <span>Indian Institute of Technology (IIT) Bhilai.</span> I'm a Front-End Developer and still learning web development. Machine Learning and Artificial Intelligence are my fields of interest. Want to know more about me. Explore the website then!</p> 
             </div>        
         </section>
 
-    <section class="main-body">    
+    <div class="section main-body">    
         <footer>
             <div class="line-break"></div>
             <div class="container footer">
@@ -59,21 +59,21 @@
                     </div>
                     <div class="col-1-of-2">
                         <ul class="footer__list">
-                            <li class="footer__list-item"><a href="#" class="social-link social-link--facebook"><i class="fab fa-facebook"></i></a></li>
+                                <li class="footer__list-item"><a href="https://www.facebook.com/sharad.roy29" class="social-link social-link--facebook"><i class="fab fa-facebook"></i></a></li>
 
-                            <li class="footer__list-item"><a href="#" class="social-link social-link--linkedin"><i class="fab fa-linkedin"></i></a></li>
-                        
-                            <li class="footer__list-item"><a href="#" class="social-link social-link--instagram"><i class="fab fa-instagram"></i></a></li>
+                                <li class="footer__list-item"><a href="https://www.linkedin.com/in/sharad-roy-42262114b/" class="social-link social-link--linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            
+                                <li class="footer__list-item"><a href="https://www.instagram.com/_sharad_roy_/" class="social-link social-link--instagram"><i class="fab fa-instagram"></i></a></li>
 
-                            <li class="footer__list-item"><a href="#" class="social-link social-link--twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li class="footer__list-item"><a href="https://twitter.com/SharadRoy6" class="social-link social-link--twitter"><i class="fab fa-twitter"></i></a></li>
 
-                            <li class="footer__list-item"><a href="#" class="social-link social-link--github"><i class="fab fa-github"></i></a></li>
+                                <li class="footer__list-item"><a href="https://github.com/TheRealMentor" class="social-link social-link--github"><i class="fab fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
-    </section>
+    </div>
 
         <!-- <section class="section section-boxes">
             <div class="container">
@@ -117,7 +117,45 @@
         
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="js/script.js"></script>
+        <script>
+            $(window).on('load', function(){
+                var title = $('.main-heading');
+                var navbar = $('.navbar');
+                var preloader = $('.preloader-container');
+                var description = $('.description');
+                var mainBody = $('.main-body');
+
+                setTimeout(function(){
+                    preloader.addClass('animated fadeOut');
+                }, 1200);
+
+                setTimeout(function(){
+                    preloader.css('display', 'none'); 
+                }, 1500);                   
+
+                setTimeout(function(){
+                    navbar.addClass('animated fadeInDown');
+                    navbar.css('display', 'block');
+                }, 1500);                    
+
+
+                setTimeout(function(){
+                    title.addClass('animated pulse');
+                    title.css('display', 'inline-block');
+                }, 2500); 
+
+                setTimeout(function(){
+                    description.addClass('animated zoomIn');
+                    description.css('display', 'inline');
+                }, 3500);
+
+                setTimeout(function(){
+                    mainBody.addClass('animated fadeIn');
+                    mainBody.css('display', 'block');
+                }, 3500);
+
+            });
+        </script>
 
     </body>
 </html>

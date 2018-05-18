@@ -1,0 +1,23 @@
+.about {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.about .main-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section__about-more {
+    padding: 10rem;
+}
+
+.section__about-more img {
+    width: 100%;
+}
+
+.description__more {
+    font-size: 2rem;
+    color: #777;
+    word-spacing: 2px;
+}

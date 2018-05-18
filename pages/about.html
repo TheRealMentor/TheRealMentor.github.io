@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"> 
+        
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700|Anton" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style__about.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="../css/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+        <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+        
+        <title>Sharad Roy &#x25b9; About Me</title>
+    </head>
+    <body>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__logo">
+                    <p class="logo">SHARAD ROY</p>
+                </div>
+                    
+                <ul class="navbar__list">
+                    <li class="navbar__list-item"><a href="about.html">About Me</a></li>
+
+                    <li class="navbar__list-item"><a href="#">Projects</a></li>
+                
+                    <li class="navbar__list-item"><a href="#">Resume</a></li>
+
+                    <li class="navbar__list-item"><a href="gallery.html">Gallery</a></li>
+                        
+                </ul>
+            </div>
+        </nav>
+
+        <section class="about">
+            <div class="container">
+                <h1 class="main-heading">About Me</h1>
+                <br/>
+                <p class="description">By now, you would have guessed my name. Yeah, it's right there on the top-left corner and on the homepage. I like to <span>design websites</span> and <span>build stuffs</span> &dash; I'm a electrical student after all. And that's pretty much what I do in my free time and, obviously, watch TV shows.</p>
+            </div>
+        </section>
+        
+
+        <div class="section main-body"> 
+            <div class="line-break"></div>
+            <section class="section section__about-more">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <img src="../img/pic_1.jpg" alt="Picture No. 1">
+                    </div>
+                    <div class="col-1-of-2">
+                        <h2>A little more about myself</h2>
+                        <div class="description__more">
+                            <p>I knew you would come here. I hope that you are doing well. I'll try to keep this short as much as possible. But if you feel not to read then you can skip at any point.</p>
+                            <br>
+                            <p>I am currently living in Raipur, India and pursuing my Bachelor's degree in Electrical Engineering at Indian Institute of Technology (IIT) Bhilai. I'm always free to chat in my free time. Most of which is spent in reading blogs and admiring the projects that people around the globe is working on.</p>
+                            <br>
+                            <p>I love web-designing and developing web-pages. Honestly, this never bores me. Sometimes, I get ideas in the weirdest of places. Besides front-end development, my areas of focus is Machine Learning and Artificial Intelligence.</p>
+                            <br>
+                            <p>There is so much to learn and explore in this world. And honestly I don't know where I'll end up working. There are so many possiblilites and opportunities in this world. And I'm very excited where this journey takes me.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="line-break"></div>
+                <div class="container footer">
+                    <div class="row">
+                        <div class="col-1-of-2">
+                            <p class="copyright">All Rights Reserved &copy; 2018. Made with <i class="fas fa-heart"></i>.</p>
+                        </div>
+                        <div class="col-1-of-2">
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="https://www.facebook.com/sharad.roy29" class="social-link social-link--facebook"><i class="fab fa-facebook"></i></a></li>
+
+                                <li class="footer__list-item"><a href="https://www.linkedin.com/in/sharad-roy-42262114b/" class="social-link social-link--linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            
+                                <li class="footer__list-item"><a href="https://www.instagram.com/_sharad_roy_/" class="social-link social-link--instagram"><i class="fab fa-instagram"></i></a></li>
+
+                                <li class="footer__list-item"><a href="https://twitter.com/SharadRoy6" class="social-link social-link--twitter"><i class="fab fa-twitter"></i></a></li>
+
+                                <li class="footer__list-item"><a href="https://github.com/TheRealMentor" class="social-link social-link--github"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(window).on('load', function(){
+                var navbar = $('.navbar');
+                var mainBody = $('.main-body');
+                var title = $('.main-heading');
+                var description = $('.description');
+
+                setTimeout(function(){
+                    navbar.addClass('animated fadeInDown');
+                    navbar.css('display', 'block');
+                }, 1000);          
+                
+                setTimeout(function(){
+                    title.addClass('animated pulse');
+                    title.css('display', 'inline-block');
+                }, 2000); 
+
+                setTimeout(function(){
+                    description.addClass('animated zoomIn');
+                    description.css('display', 'inline');
+                }, 3000);
+
+                setTimeout(function(){
+                    mainBody.addClass('animated fadeIn');
+                    mainBody.css('display', 'block');
+                }, 3000);
+
+            });
+        </script>
+
+    </body>
+</html>
