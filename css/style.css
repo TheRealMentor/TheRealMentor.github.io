@@ -127,53 +127,15 @@ h2 {
 
 .navbar {
     width: 100%;
-    padding: 3rem 0;
-    display: none;
+    padding: 5rem 0;
 }
 
 .navbar .container {
     position: relative;
 }
 
-.navbar__logo {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .logo {
-    width: 15%;
-    display: block;
-}
-
-.navbar__list {
-    float: right;
-    list-style: none;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-.navbar__list-item {
-    display: inline-block;  
-}
-
-.navbar__list-item a:link, 
-.navbar__list-item a:visited {
-    font-size: 2rem;
-    text-decoration: none;
-    color: #969696;
-    transition: all .2s;
-}
-
-.navbar__list-item a:hover,
-.navbar__list-item a:active {
-    color: #333;
-    text-decoration: underline;
-}
-
-.navbar__list-item:not(:last-child) {
-    margin-right: 3rem;
+    width: 20%;
 }
 
 
@@ -231,71 +193,6 @@ h2 {
 
 .description span {
     font-weight: 700;
-}
-
-/* -------------------- */
-/* ------- CARD ------- */
-/* -------------------- */
-
-.card {
-    height: 45rem;
-    border-radius: 3px;
-    box-shadow: 0 3px 5px rgba(78, 78, 78, 0.247);
-    position: relative;
-    overflow: hidden;
-    display: none;
-}
-
-.card .card__overlay {
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
-    transition: all .5s;
-    
-    
-}
-
-.card .card__title p {
-    color: #fff;
-    padding: 1.5rem 3rem;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-    /* position: absolute;
-    top: 20%; */
-    
-}
-
-.card--1 {
-    background-image: url('../img/nat-1-large.jpg');
-    background-size: cover;
-}
-
-.overlay--1 {
-    background-image: linear-gradient(to right bottom, #ffd54f, #ff6f00);
-}
-
-.card--2 {
-    background-image: url('../img/nat-2-large.jpg');
-    background-size: cover;
-}
-
-.overlay--2 {
-    background-image: linear-gradient(to right bottom, #32ff7e, #27ae60);
-}
-
-.card--3 {
-    background-image: url('../img/nat-3-large.jpg');
-    background-size: cover;
-}
-
-.overlay--3 {
-    background-image: linear-gradient(to right bottom, #81d4fa, #0277bd);
-}
-
-.card:hover .card__overlay {
-    clip-path: polygon(0 0, 100% 0, 100% 18%, 0 18%);
 }
 
 /* -------------------- */
@@ -363,4 +260,198 @@ footer {
 .social-link--github:hover,
 .social-link--github:active {
     color: #000;
+}
+
+/* -------------------- */
+/* ------ NAVMOB ------ */
+/* -------------------- */
+
+.navigation__checkbox {
+    display: none;
+}
+
+.navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+
+    opacity: 0;
+    width: 0;
+
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation__button {
+    background-color: #ff6b6b;
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    top: 3.3rem;
+    right: 15rem;   
+    border-radius: 50%;   
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+
+    box-shadow: 0 1rem 3rem rgba(51, 51, 51, 0.15);
+}
+
+.navigation__background {
+    background-color: #ff6b6b;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3.8rem;
+    right: 15.5rem;
+    z-index: 1000;
+
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.navigation__list-item {
+    margin: 1rem;
+}
+
+.navigation__list-link:link, 
+.navigation__list-link:visited {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 230%;
+
+    transition: all 0.4s;
+
+}
+
+.navigation__list-link:hover, 
+.navigation__list-link:active {
+    background-position: 100%;
+    color: #333;
+    transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(100);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%;
+}
+
+.navigation__icon {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+
+    transition: all .2s;
+}
+
+.navigation__icon::before {
+    top: -0.8rem;
+}
+
+.navigation__icon::after {
+    top: 0.8rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+    top: -1rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+    top: 1rem;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+/* -------------------- */
+/* ---- RESPONSIVE ---- */
+/* -------------------- */
+
+@media only screen and (max-width: 480px) {
+
+    html { font-size: 40%; }
+
+    .logo { width: 55%; }
+
+    .navigation__background { 
+        top: 3.5rem;
+        right: 5rem; 
+    }
+
+    .navigation__button {
+        top: 3.3rem;
+        right: 4.5rem; 
+    }
+
+    .col-1-of-2, .col-1-of-3, .col-2-of-3, .col-1-of-4, .col-2-of-4, .col-3-of-4 { 
+        width: 100%;
+    }
+
+    [class^="col-"]:not(:last-child) { margin-bottom: 5rem; }
+
+    .copyright { text-align: center; }
+    .footer__list { 
+        text-align: center;
+        float: none; 
+    }
+
+    .footer__list-item { font-size: 4rem; }
+
+    h2 { font-size: 3rem; }
+
+    .description__more p { font-size: 2.5rem; }
+
+    .navigation__list-link:link, 
+    .navigation__list-link:visited {
+        font-size: 3rem;
+    }
+
 }

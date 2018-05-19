@@ -16,24 +16,35 @@
     </head>
     <body>
         
-        <nav class="navbar">
+        <div class="navigation">            
+            <input type="checkbox" class="navigation__checkbox" id="nav-check">
+
+            <label for="nav-check" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item"><a href="about.html" class="navigation__list-link">About Me</a></li>
+
+                    <li class="navigation__list-item"><a href="projects.html" class="navigation__list-link">Projects</a></li>
+                    
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">Resume</a></li>
+
+                    <li class="navigation__list-item"><a href="gallery.html" class="navigation__list-link">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar">
             <div class="container">
                 <div class="navbar__logo">
                     <a href="../index.html"><img src="../img/logo.png" alt="SHARAD" class="logo"></a>
                 </div>
-                    
-                <ul class="navbar__list">
-                    <li class="navbar__list-item"><a href="about.html">About Me</a></li>
-
-                    <li class="navbar__list-item"><a href="projects.html">Projects</a></li>
-                
-                    <li class="navbar__list-item"><a href="#">Resume</a></li>
-
-                    <li class="navbar__list-item"><a href="gallery.html">Gallery</a></li>
-                        
-                </ul>
             </div>
-        </nav>
+        </div>
 
         <section class="about">
             <div class="container">
@@ -96,30 +107,24 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script>
             $(window).on('load', function(){
-                var navbar = $('.navbar');
                 var mainBody = $('.main-body');
                 var title = $('.main-heading');
-                var description = $('.description');
-
-                setTimeout(function(){
-                    navbar.addClass('animated fadeInDown');
-                    navbar.css('display', 'block');
-                }, 800);          
+                var description = $('.description');         
                 
                 setTimeout(function(){
                     title.addClass('animated pulse');
                     title.css('display', 'inline-block');
-                }, 1800); 
+                }, 500); 
 
                 setTimeout(function(){
                     description.addClass('animated zoomIn');
                     description.css('display', 'inline');
-                }, 2800);
+                }, 1000);
 
                 setTimeout(function(){
                     mainBody.addClass('animated fadeIn');
                     mainBody.css('display', 'block');
-                }, 2800);
+                }, 1500);
 
             });
         </script>
