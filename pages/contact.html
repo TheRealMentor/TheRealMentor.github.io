@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge"> 
         
-        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700|Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700|Anton|Slabo+27px" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/style__about.css">
+        <link rel="stylesheet" href="../css/style__contact.css">
         <link rel="stylesheet" href="../css/animate.css">
         <link rel="stylesheet" href="../css/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
         <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
         
-        <title>Sharad Roy &#x25b9; About Me</title>
+        <title>Sharad Roy &#x25b9; Want to Chat?</title>
     </head>
     <body>
         
@@ -46,34 +46,68 @@
             </div>
         </div>
 
-        <section class="about">
+        <section class="contact">
             <div class="container">
-                <h1 class="main-heading">About Me</h1>
-                <br/>
-                <p class="description">By now, you would have guessed my name. Yeah, it's right there on the top-left corner and on the homepage. I like to <span>design websites</span> and <span>build stuffs</span> &dash; I'm an electrical student after all. And that's pretty much what I do in my free time and, obviously, watch TV shows.</p>
+                <h1 class="main-heading">Want to Chat?</h1>
+                <br>
+                <p class="description">Do you have suggestions regarding this site? Or maybe you just want to chat with me? Whatever it is, I'm very much interested to hear from you.</p>
             </div>
         </section>
         
 
         <div class="section main-body"> 
-            <div class="line-break"></div>
-            <section class="section section__about-more">
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <img src="../img/pic_1.jpg" alt="Picture No. 1">
-                    </div>
-                    <div class="col-1-of-2">
-                        <h2>A little more about myself</h2>
-                        <div class="description__more">
-                            <p>I knew you would come here. I hope that you are doing well. I will try to keep it short and sweet. But if you feel not to read then you can skip at any point.</p>
-                            <br>
-                            <p>I am currently living in Raipur, India and pursuing my Bachelor's degree in Electrical Engineering at Indian Institute of Technology (IIT) Bhilai. When I am free, I am always open for a chat, just ping me. Most of my free time is spent in reading blogs and admiring the projects that people around the globe are working on.</p>
-                            <br>
-                            <p>I love web-designing and developing web-pages. Honestly, this never bores me. Sometimes, I get ideas in the weirdest of places. Besides front-end development, my areas of interest are Machine Learning and Artificial Intelligence.</p>
-                            <br>
-                            <p>There is so much to learn and explore in this world. And honestly, I don't know in which field I'll end up working. There are so many possiblilites and opportunities in this world. And I'm very excited where this journey takes me.</p>
+
+            <section class="section__contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1-of-4">
+                            <div class="contact__icon">
+                                <a href="mailto:sharadr@iitbhilai.ac.in"><img src="../img/email.png" alt="Email"></a>
+                            </div>
+                            <div class="contact__title">
+                                <a href="mailto:sharadr@iitbhilai.ac.in">Email</a></p>
+                            </div>
+                            <div class="contact__description">
+                                <p>Can I help you with anything?</p>
+                            </div>
                         </div>
-                        
+
+                        <div class="col-1-of-4">
+                            <div class="contact__icon">
+                                <a href="https://www.facebook.com/sharad.roy29"><img src="../img/facebook.png" alt="Facebook"></a>
+                            </div>
+                            <div class="contact__title">
+                                <a href="https://www.facebook.com/sharad.roy29">Facebook</a></p>
+                            </div>
+                            <div class="contact__description">
+                                <p>God, I love memes!</p>
+                            </div>
+                        </div>
+
+                        <div class="col-1-of-4">
+                            <div class="contact__icon">
+                                <a href="https://www.linkedin.com/in/sharad-roy-42262114b/"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+                            </div>
+                            <div class="contact__title">
+                                <a href="https://www.linkedin.com/in/sharad-roy-42262114b/">LinkedIn</a></p>
+                            </div>
+                            <div class="contact__description">
+                                <p>Oh! Want to talk like professionals? I can do that!</p>
+                            </div>
+                        </div>
+
+                        <div class="col-1-of-4">
+                            <div class="contact__icon">
+                                <a href="https://twitter.com/SharadRoy6"><img src="../img/twitter.png" alt="Twitter"></a>
+                            </div>
+                            <div class="contact__title">
+                                <a href="https://twitter.com/SharadRoy6">Twitter</a></p>
+                            </div>
+                            <div class="contact__description">
+                                <p>I don't tweet that much but when I'm in the mood. I'm on fire!</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -105,11 +139,12 @@
 
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        
         <script>
             $(window).on('load', function(){
                 var mainBody = $('.main-body');
                 var title = $('.main-heading');
-                var description = $('.description');         
+                var description = $('.description');     
                 
                 setTimeout(function(){
                     title.addClass('animated pulse');
@@ -128,6 +163,7 @@
 
             });
         </script>
+        
 
     </body>
 </html>
